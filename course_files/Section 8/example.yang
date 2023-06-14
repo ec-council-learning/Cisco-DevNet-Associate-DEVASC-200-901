@@ -1,0 +1,31 @@
+	
+	module example-device {
+	  namespace "http://example.com/device";
+	  prefix "dev";
+	
+	  container device {
+	    leaf hostname {
+	      type string;
+	    }
+	    leaf location {
+	      type string;
+	    }
+	    container interfaces {
+	      list interface {
+	        key "name";
+	        leaf name {
+	          type string;
+	        }
+	        leaf type {
+	          type enumeration {
+	            enum "ethernet";
+	            enum "wifi";
+	          }
+	        }
+	        leaf enabled {
+	          type boolean;
+	        }
+	      }
+	    }
+	  }
+	}

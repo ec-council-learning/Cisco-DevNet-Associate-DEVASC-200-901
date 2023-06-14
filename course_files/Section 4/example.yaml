@@ -1,0 +1,10 @@
+---
+name: John
+surname: Doe
+addresses:
+- Elm Street 11
+- Elm Street 12
+- Elm Street 13
+friends:
+  friend1: Jane Doe
+  friend2: John Smith
